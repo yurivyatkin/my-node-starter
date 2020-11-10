@@ -1,0 +1,17 @@
+{
+  "extends": "eslint:recommended",
+  "plugins": ["import", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "import/no-unresolved": [2, { "commonjs": true, "amd": true }],
+    "import/order": 2
+  },
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "sourceType": "module"
+  }
+}
