@@ -1,6 +1,6 @@
 {
   "extends": "eslint:recommended",
-  "plugins": ["import", "prettier"],
+  "plugins": ["import", "prettier",  "jest"],
   "rules": {
     "prettier/prettier": ["error"],
     "import/no-unresolved": [2, { "commonjs": true, "amd": true }],
@@ -8,7 +8,8 @@
   },
   "env": {
     "node": true,
-    "es6": true
+    "es6": true,
+    "jest/globals": true
   },
   "parserOptions": {
     "ecmaVersion": 9,
